@@ -27,18 +27,13 @@ function isOperator(char) {
 function result() {
     try {
         var ans = eval(n);
-        return displays(n);
-
-        // Add to history
-       addToHistory(n + ' = ' + ans);
+        addToHistory(n + ' = ' + ans);
+        n = ans.toString();
+        return displays(ans);
     } catch (error) {
         return displays("Error");
     }
 }
-
-
-
-
 function addToHistory(item) {
     var historyList = document.getElementById('historyList');
     var listItem = document.createElement('li');
