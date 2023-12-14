@@ -6,36 +6,37 @@
     <body>
         <div id="calculator_body">
             <div id="display">
-                <div id="history"><img src="wall-clock.png"></div>
+                <div id="history" onclick="showHistory()"><img src="wall-clock.png"></div>
                     <p id="display_output"></p>
             </div>
 
             <div id="cal_button">
-                <div class="operator" id="reset" >AC</div>
-                <div class="operator" id="clear" >C</div>
-                <div class="operator" id="modulus" >%</div>
-                <div class="operator" id="divide" >÷</div>
-                <div class="numbers" id="7" >7</div>
-                <div class="numbers" id="8" >8</div>
-                <div class="numbers" id="9" >9</div>
-                <div class="operator" id="multiply"  >⨯</div>
-                <div class="numbers" id="4">4</div>
-                <div class="numbers" id="5" >5</div>
-                <div class="numbers" id="6"  >6</div>
-                <div class="operator" id="add" >+</div>
-                <div class="numbers" id="1" >1</div>
-                <div class="numbers" id="2"  >2</div>
-                <div class="numbers" id="3"  >3</div>
-                <div class="operator" id="sub" >-</div>
-                <div class="operator" id="brakets" >()</div>
-                <div class="numbers" id="0" >0</div>
-                <div id="but_dot" >.</div>
-                <div class="operator" id="answer" >=</div>
+                <div class="operator" id="reset" onclick="clearResult()">AC</div>
+                <div class="operator" id="clear" onclick="clearLast()">C</div>
+                <div class="operator" id="modulus" onclick="calculate('%')">%</div>
+                <div class="operator" id="divide" onclick="calculate('/')">÷</div>
+                <div class="numbers" id="7" onclick="calculate('7')">7</div>
+                <div class="numbers" id="8" onclick="calculate('8')">8</div>
+                <div class="numbers" id="9" onclick="calculate('9')">9</div>
+                <div class="operator" id="multiply" onclick="calculate('*')" >⨯</div>
+                <div class="numbers" id="4" onclick="calculate('4')" >4</div>
+                <div class="numbers" id="5" onclick="calculate('5')" >5</div>
+                <div class="numbers" id="6" onclick="calculate('6')" >6</div>
+                <div class="operator" id="add" onclick="calculate('+')">+</div>
+                <div class="numbers" id="1" onclick="calculate('1')" >1</div>
+                <div class="numbers" id="2" onclick="calculate('2')" >2</div>
+                <div class="numbers" id="3" onclick="calculate('3')" >3</div>
+                <div class="operator" id="sub" onclick="calculate('-')">-</div>
+                <div class="operator" id="brakets" onclick="addBracket()">()</div>
+                <div class="numbers" id="0" onclick="calculate('0')">0</div>
+                <div id="but_dot" onclick="calculate('.')">.</div>
+                <div class="operator" id="answer" onclick="result(id)">=</div>
                 <div id="test"> <h3>History</h3>
                     <ul id="historyList"></ul>
                 </div>
             </div>
         </div>
     </body>
+    <script src="script.js">
     </script>
 </html>

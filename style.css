@@ -1,0 +1,38 @@
+
+#calculator_body {
+    width: 450px;
+    height: fit-content;
+    border: 1px solid black;
+    margin: auto;
+}
+#display {
+    width:  100%;
+    height: 75px;
+    border: 1px solid black;
+}
+#display_output, #display_history {
+    text-align: right;
+    font-size: 25px;
+    margin: auto;
+}
+#cal_button {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    cursor: pointer;
+    font-size: 50px;
+    text-align: center;
+}
+img{
+    width:25px;
+}
+#cal_button div:hover {
+    background-color: antiquewhite;
+}
+
+#test {
+    border: 1px solid red;
+    width: 450px;
+    height: 100%;
+    position: absolute;
+    display:none;
+}
