@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div id="calculator_body">
+        <div id="calculator_body"  onkeydown="return checkey(event)">
             <div id="display">
                 <div id="history" onclick="showHistory()"><img src="wall-clock.png"></div>
                 <p id="display_output"></p>

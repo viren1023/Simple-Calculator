@@ -26,9 +26,10 @@ body {
     align-items: center;
     text-align: right;
     justify-content: center;
+    padding: 15px;
 }
 #display div{
-    padding: 20px;
+    display: inline;
 }
 #display_output{
     text-align: right;
@@ -37,6 +38,8 @@ body {
     overflow-wrap: break-word;
     word-wrap: break-word;
     overflow:auto;
+    background-color: #f7f5eb;
+    border-style: none;
 }
 #cal_button {
     border-radius: 0px 0px 15px 15px;   
